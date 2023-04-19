@@ -1,0 +1,35 @@
+@mixin header-type {
+  font-family: "Volkhov", serif;
+  font-size: 48px;
+  font-weight: 700;
+  height: 58px;
+}
+
+@mixin sub-header-type {
+  font-family: "Volkhov", serif;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+@mixin text-type {
+  font-family: "Volkhov", serif;
+  font-size: 24px;
+}
+
+@mixin footer-type {
+  font-family: "Volkhov", serif;
+  font-size: 14px;
+}
+
+@mixin center-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin center-content-column {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}

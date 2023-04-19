@@ -1,0 +1,57 @@
+@import './mixins.scss';
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: #20272F;
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100vw;
+    background-color: #202f21;
+}
+
+h1 {
+    @include header-type;
+    z-index: 2;
+}
+
+h2 {
+    @include header-type;
+    text-decoration: underline;
+    z-index: 2;
+}
+
+.sub-header {
+    @include sub-header-type;
+    z-index: 2;
+}
+
+.regular-text {
+    @include text-type;
+    z-index: 2;
+}
+
+.footer-text {
+    @include footer-type;
+    z-index: 2;
+}
+
+div, section {
+    background-color: #c5c0b9;
+}
+
+a {
+    @include sub-header-type;
+    font-weight: 400;
+    text-decoration: none;
+    z-index: 2;
+}
+
+@keyframes bgFlash {
+    0% {background-color: #c5c0b9;}
+    50% {background-color: #e9e5df;}
+    0% {background-color: #c5c0b9;}
+}
